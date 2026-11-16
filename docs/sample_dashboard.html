@@ -1,0 +1,175 @@
+<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>账号诊断看板</title><style>
+:root{--bg:#0f1115;--card:#1a1d24;--ink:#e8eaf0;--muted:#9aa0ad;--red:#ff3b4e;--green:#2ecc71;--amber:#ffb020;--blue:#4aa3ff;--line:#2a2e38;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;line-height:1.5;padding:16px;max-width:760px;margin:0 auto}
+h1{font-size:22px;margin-bottom:4px}
+h2{font-size:17px;margin:22px 0 10px;padding-left:10px;border-left:4px solid var(--red)}
+.sub{color:var(--muted);font-size:13px;margin-bottom:6px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin:10px 0}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:12px 0}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+.kpi .v{font-size:20px;font-weight:700}
+.kpi .l{font-size:11px;color:var(--muted);margin-top:2px}
+table{width:100%;border-collapse:collapse;font-size:12.5px}
+th,td{padding:7px 6px;text-align:left;border-bottom:1px solid var(--line)}
+th{color:var(--muted);font-weight:600;font-size:11px}
+.tag{display:inline-block;padding:1px 7px;border-radius:6px;font-size:11px;font-weight:600}
+.tag.干货{background:rgba(74,163,255,.18);color:#4aa3ff}
+.tag.热点{background:rgba(255,176,32,.18);color:#ffb020}
+.tag.日常{background:rgba(255,59,78,.16);color:#ff3b4e}
+
+.bar{height:8px;border-radius:5px;background:linear-gradient(90deg,var(--red),var(--amber));min-width:2px}
+.barwrap{background:var(--line);border-radius:5px;height:8px;overflow:hidden;flex:1}
+.row{display:flex;align-items:center;gap:8px;margin:5px 0;font-size:12.5px}
+.row .name{width:64px;color:var(--muted);flex-shrink:0}
+.badge{font-size:11px;padding:1px 6px;border-radius:5px}
+.badge.good{background:rgba(46,204,113,.18);color:var(--green)}
+.badge.bad{background:rgba(255,59,78,.18);color:var(--red)}
+.note{font-size:12px;color:var(--muted);margin:6px 0}
+.foot{font-size:11px;color:var(--muted);margin-top:26px;text-align:center;border-top:1px solid var(--line);padding-top:12px}
+.pos{color:var(--red);font-weight:700}.neg{color:var(--green)}
+</style></head><body>
+<h1>📊 账号诊断看板</h1>
+<div class="sub">数据周期：2026-09-01 ~ 2026-10-10 · 共 15 篇笔记 · 来源 2 份官方导出 · 生成 2026-11-16 20:07</div>
+<div class="sub" style="color:var(--amber)">⚠️ 数据来自你自己的小红书后台官方导出，零爬取、零第三方服务，全程本地不上传。</div>
+
+<div class="kpis">
+<div class="kpi"><div class="v">119,140</div><div class="l">总曝光</div></div>
+<div class="kpi"><div class="v">12,073</div><div class="l">总观看</div></div>
+<div class="kpi"><div class="v">21</div><div class="l">总涨粉</div></div>
+<div class="kpi"><div class="v">8.2%</div><div class="l">平均互动率</div></div>
+<div class="kpi"><div class="v">0.09</div><div class="l">平均封面点击率</div></div>
+<div class="kpi"><div class="v">1,285</div><div class="l">总互动</div></div>
+</div>
+
+<h2>① 单篇红黑榜</h2>
+<div class="card"><div class="badge good">红榜 TOP5</div>
+<table><tr><th>内容线</th><th>标题</th><th>曝光</th><th>涨粉</th><th>互动率</th></tr><tr><td class="tag 热点">热点线</td><td>这瓜反转得离谱，全网都看错了</td><td>28000</td><td>1</td><td>9.6%</td></tr><tr><td class="tag 热点">热点线</td><td>最近争议很大的事，说点别人不敢说的</td><td>28000</td><td>2</td><td>7.3%</td></tr><tr><td class="tag 日常">日常线</td><td>周末逛了趟集市</td><td>12000</td><td>6</td><td>16.1%</td></tr><tr><td class="tag 日常">日常线</td><td>新增：一篇迟到的复盘</td><td>12000</td><td>12</td><td>13.4%</td></tr><tr><td class="tag 干货">干货线</td><td>新手博主常用方法：内容线拆解</td><td>12000</td><td>0</td><td>10.8%</td></tr></table></div>
+<div class="card"><div class="badge bad">黑榜 BOTTOM5</div>
+<table><tr><th>内容线</th><th>标题</th><th>曝光</th><th>涨粉</th><th>互动率</th></tr><tr><td class="tag 干货">干货线</td><td>拍摄角度攻略，手机也能拍大片</td><td>60</td><td>0</td><td>0.0%</td></tr><tr><td class="tag 干货">干货线</td><td>一条笔记的完整制作教程，从标题到封面</td><td>60</td><td>0</td><td>0.0%</td></tr><tr><td class="tag 热点">热点线</td><td>热搜上的事，聊聊我的看法</td><td>60</td><td>0</td><td>0.0%</td></tr><tr><td class="tag 日常">日常线</td><td>被问爆的问题统一回答：关于定位</td><td>60</td><td>0</td><td>0.0%</td></tr><tr><td class="tag 热点">热点线</td><td>评论区吵翻的瓜，我扒到了源头</td><td>900</td><td>0</td><td>10.2%</td></tr></table>
+<div class="note">综合得分 = 涨粉×权重 + 互动数 + 曝光×小权重（可在 config.json 里调），权重透明可解释。</div></div>
+
+<h2>② 爆款规律</h2>
+<div class="card">
+<table><tr><th>内容线</th><th>篇数</th><th>曝光均值</th><th>互动率</th><th>涨粉均值</th><th>涨粉效率</th></tr><tr><td class="tag 日常">日常线</td><td>5</td><td>6212</td><td>10.3%</td><td>3</td><td>0.03%</td></tr><tr><td class="tag 热点">热点线</td><td>5</td><td>12092</td><td>8.2%</td><td>0</td><td>0.00%</td></tr><tr><td class="tag 干货">干货线</td><td>5</td><td>5524</td><td>6.2%</td><td>0</td><td>0.00%</td></tr></table>
+<div class="note">体裁分布：</div>
+<table><tr><th>体裁</th><th>篇数</th><th>占比</th></tr><tr><td>图文</td><td>9</td><td>60.0%</td></tr><tr><td>视频</td><td>6</td><td>40.0%</td></tr></table>
+<div class="note">标题长度与互动的相关系数 -0.11（接近0表示长度不是关键，选题/封面更决定表现）</div>
+</div>
+
+<h2>③ 内容线对比</h2>
+<div class="card">
+        <div style="margin:10px 0">
+          <div class="row"><span class="name">干货线</span>
+            <span style="width:90px;color:var(--muted)">曝光均值</span>
+            <div class="barwrap"><div class="bar" style="width:45%"></div></div>
+            <span style="width:54px;text-align:right">5524</span></div>
+          <div class="row"><span class="name"></span>
+            <span style="width:90px;color:var(--muted)">互动率</span>
+            <div class="barwrap"><div class="bar" style="width:59%"></div></div>
+            <span style="width:54px;text-align:right">6.2%</span></div>
+          <div class="row"><span class="name"></span>
+            <span style="width:90px;color:var(--muted)">涨粉效率</span>
+            <div class="barwrap"><div class="bar" style="width:2%"></div></div>
+            <span style="width:54px;text-align:right">0.00%</span></div>
+        </div>
+        <div style="margin:10px 0">
+          <div class="row"><span class="name">日常线</span>
+            <span style="width:90px;color:var(--muted)">曝光均值</span>
+            <div class="barwrap"><div class="bar" style="width:51%"></div></div>
+            <span style="width:54px;text-align:right">6212</span></div>
+          <div class="row"><span class="name"></span>
+            <span style="width:90px;color:var(--muted)">互动率</span>
+            <div class="barwrap"><div class="bar" style="width:100%"></div></div>
+            <span style="width:54px;text-align:right">10.3%</span></div>
+          <div class="row"><span class="name"></span>
+            <span style="width:90px;color:var(--muted)">涨粉效率</span>
+            <div class="barwrap"><div class="bar" style="width:100%"></div></div>
+            <span style="width:54px;text-align:right">0.03%</span></div>
+        </div>
+        <div style="margin:10px 0">
+          <div class="row"><span class="name">热点线</span>
+            <span style="width:90px;color:var(--muted)">曝光均值</span>
+            <div class="barwrap"><div class="bar" style="width:100%"></div></div>
+            <span style="width:54px;text-align:right">12092</span></div>
+          <div class="row"><span class="name"></span>
+            <span style="width:90px;color:var(--muted)">互动率</span>
+            <div class="barwrap"><div class="bar" style="width:78%"></div></div>
+            <span style="width:54px;text-align:right">8.2%</span></div>
+          <div class="row"><span class="name"></span>
+            <span style="width:90px;color:var(--muted)">涨粉效率</span>
+            <div class="barwrap"><div class="bar" style="width:7%"></div></div>
+            <span style="width:54px;text-align:right">0.00%</span></div>
+        </div>
+<div class="note">条形越长代表该指标在各内容线里越高。谁在「涨粉效率」上领跑，下次就多压哪条线。</div></div>
+
+<h2>④ 流量健康诊断</h2>
+<div class="card">
+<div class="row"><span class="name">曝光均值</span><span>7942</span></div>
+<div class="row"><span class="name">互动率均值</span><span>8.2%</span></div>
+<div class="row"><span class="name">封面点击率</span><span>0.09</span></div>
+<div class="badge bad">零曝光笔记 0 篇</div>
+<div class="badge bad">低点击率笔记 7 篇</div>
+<div class="note">「高曝光低互动」清单（流量进了但没接住，问题在内容转化）：</div>
+<table><tr><th>标题</th><th>曝光</th><th>互动率</th><th>诊断</th></tr><tr><td>最近争议很大的事，说点别人不敢说的</td><td>28000</td><td>7.3%</td><td class="neg">低互动</td></tr></table>
+</div>
+
+
+<h2>⑤ 诊断结论（不是摆数，是找病根）</h2>
+<div class="card">
+  <div style="font-weight:700;margin-bottom:6px">转化漏斗</div>
+  <div class="row"><span class="name">曝光→观看</span><span style="width:80px;text-align:right;color:var(--ink);font-weight:600">10.13%</span><div class="barwrap"><div class="bar" style="width:10%"></div></div></div><div class="row"><span class="name">观看→互动</span><span style="width:80px;text-align:right;color:var(--ink);font-weight:600">10.64%</span><div class="barwrap"><div class="bar" style="width:10%"></div></div></div><div class="row"><span class="name">互动→涨粉</span><span style="width:80px;text-align:right;color:var(--ink);font-weight:600">1.63%</span><div class="barwrap"><div class="bar" style="width:2%"></div></div></div><div class="row"><span class="name">曝光→涨粉</span><span style="width:80px;text-align:right;color:var(--ink);font-weight:600">0.02%</span><div class="barwrap"><div class="bar" style="width:2%"></div></div></div>
+  <div class="note" style="margin-top:8px;color:var(--ink)">最大漏点在 <span class="pos">【互动→涨粉】</span>：你有流量（曝光 119,140.0）但只换回 21.0 个粉，11/15 篇笔记涨粉为 0。问题不在"让人点进来"，在"让人留下来关注"。</div>
+</div>
+<div class="card">
+  <div style="font-weight:700;margin-bottom:6px">红黑榜归因</div>
+  <div class="note">🔴 红榜 TOP5 共性：这瓜反转得离谱，全网都看错了、最近争议很大的事，说点别人不敢说的、周末逛了趟集市（主要集中在 热点、日常、干货 线）</div>
+  <div class="note">⚫ 黑榜分桶：</div>
+  <div class="note">• 有效涨粉：4 篇</div><div class="note">• 有流量没接住（缺关注引导）：7 篇</div><div class="note">• 没流量（发布/推荐问题）：4 篇</div>
+  <div class="note">💎 暂无明显高质量低曝光内容</div>
+</div>
+<div class="card">
+  <div style="font-weight:700;margin-bottom:6px">内容线分工建议</div>
+  <table><tr><th>内容线</th><th>篇数</th><th>总曝光</th><th>互动率</th><th>涨粉</th><th>角色定位</th></tr><tr><td class="tag 干货">干货线</td><td>5</td><td>27,620</td><td>6.2%</td><td>0</td><td style="color:var(--amber)">常规</td></tr><tr><td class="tag 日常">日常线</td><td>5</td><td>31,060</td><td>10.3%</td><td>18</td><td style="color:var(--amber)">质量引擎（互动最高）</td></tr><tr><td class="tag 热点">热点线</td><td>5</td><td>60,460</td><td>8.2%</td><td>3</td><td style="color:var(--amber)">流量引擎（保曝光）</td></tr></table>
+  <div class="note">流量引擎保曝光、质量引擎做粘性，两条线在标题/合集里互相导流。</div>
+</div>
+
+<h2>⑥ 你的优化方案（照着做，不空谈）</h2>
+
+        <div class="card" style="border-left:4px solid var(--amber)">
+          <div class="badge bad" style="background:rgba(255,176,32,.18);color:var(--amber)">P0</div>
+          <div style="font-weight:700;margin:6px 0 4px">🔧 关注引导缺失——漏斗末端断了</div>
+          <div class="note">📊 数据依据：总曝光 119,140.0 仅换 21.0 粉，曝光→涨粉率 0.018%；11/15 篇零涨粉</div>
+          <div class="note">✅ 具体改法：① 每篇文末加 1 句关注钩子（例：『关注我，&lt;你的核心更新内容&gt;每天更』）；② 主页简介写清定位+关注理由；③ 置顶一条『新人必看』</div>
+          <div class="note" style="color:var(--muted)">📈 预期：若曝光→涨粉率提到当前 3 倍（0.053%），同等流量月涨粉约 63（估算，非承诺）</div>
+        </div>
+        <div class="card" style="border-left:4px solid var(--amber)">
+          <div class="badge bad" style="background:rgba(255,176,32,.18);color:var(--amber)">P1</div>
+          <div style="font-weight:700;margin:6px 0 4px">🔧 红榜全是「热点」线——已有验证的流量打法没放大</div>
+          <div class="note">📊 数据依据：红榜 TOP5：这瓜反转得离谱，全网都看错了；最近争议很大的事，说点别人不敢说的；周末逛了趟集市</div>
+          <div class="note">✅ 具体改法：把「热点」线的标题套路做成模板，批量复用；其余线借这条线的流量结构</div>
+          <div class="note" style="color:var(--muted)">📈 预期：复制已验证的曝光结构，降低单篇试错成本</div>
+        </div>
+        <div class="card" style="border-left:4px solid var(--amber)">
+          <div class="badge bad" style="background:rgba(255,176,32,.18);color:var(--amber)">P2</div>
+          <div style="font-weight:700;margin:6px 0 4px">🔧 4 篇几乎零曝光——没进推荐流</div>
+          <div class="note">📊 数据依据：标题例：一条笔记的完整制作教程，从标题到封面；热搜上的事，聊聊我的看法</div>
+          <div class="note">✅ 具体改法：检查发布时间（工作日晚 18–22 点、周末午间流量高）；首小时靠粉丝/社群撬动初始互动，触发推荐；标题前 15 字含搜索热词</div>
+          <div class="note" style="color:var(--muted)">📈 预期：先把『发得出去』解决，再谈转化</div>
+        </div>
+        <div class="card" style="border-left:4px solid var(--amber)">
+          <div class="badge bad" style="background:rgba(255,176,32,.18);color:var(--amber)">P2</div>
+          <div style="font-weight:700;margin:6px 0 4px">🔧 内容线没分工，质量线被流量线淹没</div>
+          <div class="note">📊 数据依据：质量引擎=日常（互动最高但曝光少）；流量引擎=热点（曝光高）</div>
+          <div class="note">✅ 具体改法：用「热点」做流量钩子吸新，用「日常」做粘性沉淀粉丝；两条线在标题/合集里互相导流</div>
+          <div class="note" style="color:var(--muted)">📈 预期：流量与质量分开经营，既不缺曝光也不缺粘性</div>
+        </div>
+<div class="note" style="color:var(--muted)">⚠️ 预期数字为基于当前数据的保守估算（3 倍提升假设），非涨粉承诺。所有建议来自你后台真实数据，不编不猜。</div>
+
+
+
+
+<div class="foot">小红书账号诊断器 · 数据 100% 来自你自己后台的官方导出，不外泄、不爬取、不上传</div>
+</body></html>
