@@ -79,6 +79,15 @@ Agent 会自动执行脚本、打开看板、并用一句话告诉你最大漏�
 
 `docs/sample_dashboard.html` 是用合成数据生成的完整看板样例（数据为虚构演示，非真实账号）。
 
+想先在真实安装前体验完整流程，可以生成演示数据自己跑一遍：
+
+```bash
+python xhs-account-doctor/scripts/make_demo_data.py    # 生成两份虚构的演示 xlsx
+python xhs-account-doctor/scripts/account_doctor.py \
+    xhs-account-doctor/scripts/demo_data/笔记列表明细表_0930.xlsx \
+    xhs-account-doctor/scripts/demo_data/笔记列表明细表_1015.xlsx
+```
+
 ## 方法学
 
 数据口径与判定规则全部来自实战踩坑，写在 [`xhs-account-doctor/references/methodology.md`](xhs-account-doctor/references/methodology.md)：
